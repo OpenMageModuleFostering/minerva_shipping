@@ -90,10 +90,26 @@
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type1>
+			<min_shipping1 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>8</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping1>
+			<max_shipping1 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>9</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping1>
             <name2 translate="label">
               <label>Event / Method 2 >></label>
               <frontend_type>text</frontend_type>
-              <sort_order>8</sort_order>
+              <sort_order>10</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -101,7 +117,7 @@
             <price2 translate="label">
               <label>• Price (0.00)</label>
               <frontend_type>text</frontend_type>
-              <sort_order>9</sort_order>
+              <sort_order>11</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -109,7 +125,7 @@
             <details2 translate="label">
               <label>• Details</label>
               <frontend_type>textarea</frontend_type>
-              <sort_order>10</sort_order>
+              <sort_order>12</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -118,15 +134,31 @@
               <label>• Type</label>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_shipping_flatrate</source_model>
-              <sort_order>11</sort_order>
+              <sort_order>13</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type2>
+			<min_shipping2 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>14</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping2>
+			<max_shipping2 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>15</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping2>
             <name3 translate="label">
               <label>Event / Method 3 >></label>
               <frontend_type>text</frontend_type>
-              <sort_order>12</sort_order>
+              <sort_order>16</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -134,7 +166,7 @@
             <price3 translate="label">
               <label>• Price (0.00)</label>
               <frontend_type>text</frontend_type>
-              <sort_order>13</sort_order>
+              <sort_order>17</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -142,7 +174,7 @@
             <details3 translate="label">
               <label>• Details</label>
               <frontend_type>textarea</frontend_type>
-              <sort_order>14</sort_order>
+              <sort_order>18</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -151,15 +183,31 @@
               <label>• Type</label>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_shipping_flatrate</source_model>
-              <sort_order>15</sort_order>
+              <sort_order>19</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type3>
+			<min_shipping3 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping3>
+			<max_shipping3 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>21</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping3>
             <name4 translate="label">
               <label>Event / Method 4 >></label>
               <frontend_type>text</frontend_type>
-              <sort_order>16</sort_order>
+              <sort_order>22</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -167,7 +215,7 @@
             <price4 translate="label">
               <label>• Price (0.00)</label>
               <frontend_type>text</frontend_type>
-              <sort_order>17</sort_order>
+              <sort_order>23</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -175,7 +223,7 @@
             <details4 translate="label">
               <label>• Details</label>
               <frontend_type>textarea</frontend_type>
-              <sort_order>18</sort_order>
+              <sort_order>24</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -184,15 +232,31 @@
               <label>• Type</label>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_shipping_flatrate</source_model>
-              <sort_order>19</sort_order>
+              <sort_order>25</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type4>
+			<min_shipping4 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>26</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping4>
+			<max_shipping4 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>27</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping4>
             <name5 translate="label">
               <label>Event / Method 5 >></label>
               <frontend_type>text</frontend_type>
-              <sort_order>20</sort_order>
+              <sort_order>28</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -200,7 +264,7 @@
             <price5 translate="label">
               <label>• Price (0.00)</label>
               <frontend_type>text</frontend_type>
-              <sort_order>21</sort_order>
+              <sort_order>29</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -208,7 +272,7 @@
             <details5 translate="label">
               <label>• Details</label>
               <frontend_type>textarea</frontend_type>
-              <sort_order>22</sort_order>
+              <sort_order>30</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -217,15 +281,31 @@
               <label>• Type</label>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_shipping_flatrate</source_model>
-              <sort_order>23</sort_order>
+              <sort_order>31</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type5>
+			<min_shipping5 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>32</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping5>
+			<max_shipping5 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>33</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping5>
             <name6 translate="label">
               <label>Event / Method 6 >></label>
               <frontend_type>text</frontend_type>
-              <sort_order>24</sort_order>
+              <sort_order>34</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -233,7 +313,7 @@
             <price6 translate="label">
               <label>• Price (0.00)</label>
               <frontend_type>text</frontend_type>
-              <sort_order>25</sort_order>
+              <sort_order>36</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -241,7 +321,7 @@
             <details6 translate="label">
               <label>• Details</label>
               <frontend_type>textarea</frontend_type>
-              <sort_order>26</sort_order>
+              <sort_order>37</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -250,15 +330,31 @@
               <label>• Type</label>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_shipping_flatrate</source_model>
-              <sort_order>27</sort_order>
+              <sort_order>38</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type6>
+			<min_shipping6 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>39</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping6>
+			<max_shipping6 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping6>
             <name7 translate="label">
               <label>Event / Method 7 >></label>
               <frontend_type>text</frontend_type>
-              <sort_order>28</sort_order>
+              <sort_order>41</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -266,7 +362,7 @@
             <price7 translate="label">
               <label>• Price (0.00)</label>
               <frontend_type>text</frontend_type>
-              <sort_order>29</sort_order>
+              <sort_order>42</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -274,7 +370,7 @@
             <details7 translate="label">
               <label>• Details</label>
               <frontend_type>textarea</frontend_type>
-              <sort_order>30</sort_order>
+              <sort_order>43</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -283,15 +379,31 @@
               <label>• Type</label>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_shipping_flatrate</source_model>
-              <sort_order>31</sort_order>
+              <sort_order>44</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type7>
+			<min_shipping7 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>45</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping7>
+			<max_shipping7 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>46</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping7>
             <name8 translate="label">
               <label>Event / Method 8 >></label>
               <frontend_type>text</frontend_type>
-              <sort_order>32</sort_order>
+              <sort_order>47</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -299,7 +411,7 @@
             <price8 translate="label">
               <label>• Price (0.00)</label>
               <frontend_type>text</frontend_type>
-              <sort_order>33</sort_order>
+              <sort_order>48</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -307,7 +419,7 @@
             <details8 translate="label">
               <label>• Details</label>
               <frontend_type>textarea</frontend_type>
-              <sort_order>34</sort_order>
+              <sort_order>49</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -316,15 +428,31 @@
               <label>• Type</label>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_shipping_flatrate</source_model>
-              <sort_order>35</sort_order>
+              <sort_order>50</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type8>
+			<min_shipping8 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>51</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping8>
+			<max_shipping8 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>52</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping8>
             <name9 translate="label">
               <label>Event / Method 9 >></label>
               <frontend_type>text</frontend_type>
-              <sort_order>36</sort_order>
+              <sort_order>53</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -332,7 +460,7 @@
             <price9 translate="label">
               <label>• Price (0.00)</label>
               <frontend_type>text</frontend_type>
-              <sort_order>37</sort_order>
+              <sort_order>54</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -340,7 +468,7 @@
             <details9 translate="label">
               <label>• Details</label>
               <frontend_type>textarea</frontend_type>
-              <sort_order>38</sort_order>
+              <sort_order>55</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -349,15 +477,31 @@
               <label>• Type</label>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_shipping_flatrate</source_model>
-              <sort_order>39</sort_order>
+              <sort_order>56</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type9>
+			<min_shipping9 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>57</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping9>
+			<max_shipping9 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>58</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping9>
             <name10 translate="label">
               <label>Event / Method 10 >></label>
               <frontend_type>text</frontend_type>
-              <sort_order>40</sort_order>
+              <sort_order>59</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -365,7 +509,7 @@
             <price10 translate="label">
               <label>• Price (0.00)</label>
               <frontend_type>text</frontend_type>
-              <sort_order>41</sort_order>
+              <sort_order>60</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -373,7 +517,7 @@
             <details10 translate="label">
               <label>• Details</label>
               <frontend_type>textarea</frontend_type>
-              <sort_order>42</sort_order>
+              <sort_order>61</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>1</show_in_store>
@@ -382,11 +526,27 @@
               <label>• Type</label>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_shipping_flatrate</source_model>
-              <sort_order>43</sort_order>
+              <sort_order>62</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
               <show_in_store>0</show_in_store>
             </type10>
+			<min_shipping10 translate="label">
+              <label>• Minimum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>63</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </min_shipping10>
+			<max_shipping10 translate="label">
+              <label>• Maximum order amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>64</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </max_shipping10>
             <sallowspecific translate="label">
               <label>Ship to applicable countries</label>
               <frontend_type>select</frontend_type>

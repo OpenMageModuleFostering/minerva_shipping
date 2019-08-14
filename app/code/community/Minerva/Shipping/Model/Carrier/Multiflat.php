@@ -37,13 +37,13 @@ class Minerva_Shipping_Model_Carrier_Multiflat extends Mage_Shipping_Model_Carri
         if (!$this->getConfigFlag('active')) {
             return false;
         }
-        $result = Mage::getModel('shipping/rate_result');
+        $allow = ($request->getmultiflat());
+		$result = Mage::getModel('shipping/rate_result');
 		$packageValue = $request->getBaseCurrency()->convert($request->getPackageValue(), $request->getPackageCurrency());
-        $allow = ($request->getmultiflat())
-            || ($packageValue >= $this->getConfigData('free_shipping_subtotal'));
         for($i = 0; $i <= 10; $i++)
         {
-            if ($this->getConfigData('type'.$i) == 'O') { // per order
+
+		if ($this->getConfigData('type'.$i) == 'O') { // per order
             $shippingPrice = $this->getConfigData('price'.$i);
         } elseif ($this->getConfigData('type'.$i) == 'I') { // per item
             $shippingPrice = ($request->getPackageQty() * $this->getConfigData('price'.$i)) - ($this->getFreeBoxes() * $this->getConfigData('price'.$i));
@@ -52,7 +52,7 @@ class Minerva_Shipping_Model_Carrier_Multiflat extends Mage_Shipping_Model_Carri
         }
 		
 			$shippingName = $this->getConfigData('name'.$i);
-            if($shippingName != "")
+            if($shippingName != "" && ($packageValue >= $this->getConfigData('min_shipping'.$i) && $packageValue <= $this->getConfigData('max_shipping'.$i)) or $shippingName != "" && $this->getConfigData('max_shipping'.$i) == "")
             {                
                 $method = Mage::getModel('shipping/rate_result_method');
                 $method->setCarrier('msmultiflat');
@@ -69,7 +69,7 @@ class Minerva_Shipping_Model_Carrier_Multiflat extends Mage_Shipping_Model_Carri
 			else if ($shippingName == "")
             {                
             }
-
+     	
         }
 
         return $result; 
@@ -77,7 +77,7 @@ class Minerva_Shipping_Model_Carrier_Multiflat extends Mage_Shipping_Model_Carri
 
     public function getAllowedMethods()
     {
-        return array('msmultiflat'=>$this->getConfigData('name'));
+			return array('msmultiflat'=>$this->getConfigData('name'));
     }
 }
 ?>
