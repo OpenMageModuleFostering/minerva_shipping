@@ -1,17 +1,13 @@
 <?xml version="1.0"?>
 <package>
     <name>Minerva_Shipping</name>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
     <extends/>
     <summary>Adds the ability to enter pickup locations or multiple flatrates and displays method details.</summary>
-    <description>PLEASE NOTE: THIS EXTENSION IS NOW COMPATIBLE WITH 1.2.1.2. 
-
-As I have time I will extend the classes to hopefully make it not as version dependent; however, it relies heavily on template files. 
-
-The issues with invoicing and shipping have been resolved thanks to help from Shane at Collins Harper.
+    <description>PLEASE NOTE: YOU WILL NEED TO INSTALL THE TEMPLATE FILES INCLUDED OR MODIFY YOURS IN ORDER FOR THE DETAILS TO DISPLAY. SEE BELOW INSTRUCTIONS FOR FURTHER INFORMATION.
 
 This extension is free to the community but I do work on it in my spare time so any donations are greatly appreciated - thank you in advance!
 
@@ -20,15 +16,17 @@ This extension is free to the community but I do work on it in my spare time so 
 &lt;span style="display: block; background-color: #ccc; padding: 2px 6px; font-weight: bold;"&gt;Attention Please&lt;/span&gt;
 &#x2022; I try to check the forum for this extension regularly, but if I do not respond please PM me. 
 &#x2022; Feel free to post any feature requests and I will work on them as time allows (see below).
-&#x2022; I have been really busy lately so have not been able to modify in awhile, but hope to do so again soon. 
 
 &lt;span style="display: block; background-color: #ccc; padding: 2px 6px; font-weight: bold;"&gt;Release Notes&lt;/span&gt;
+1.3.0 - Changes
+&#x2022; Extension now allows you to specify charge as "per order" or "per item" for each option.
+
 1.2.1 - Changes
 &#x2022; Extension displays descriptions again
 
 1.2.0 - Changes
 &#x2022; Extension is now compatible with Magento 1.2.x
-&#x2022; Extension no longer creates invoicing and shipping errors caused by 1.1.x transition
+&#x2022; The issues with invoicing and shipping caused by the 1.1 transition have been resolved thanks to help from Shane at Collins Harper.
 
 1.0.0 - Changes
 &#x2022; Extension is now compatible with Magento 1.1.6; previous versions will no longer be supported.
@@ -63,14 +61,15 @@ The class shipDetails is built into these two template files. The standard css t
 &#x2022; Disable the display of the cost if price field is left blank.
 &#x2022; The ability to show/hide the # of options you wish to use.
 &#x2022; Set min/max purchase limits for each option.
+&#x2022; Extend classes on remaining files to eliminate most version dependency.
 
 &lt;span style="display: block; background-color: #ccc; padding: 2px 6px; font-weight: bold;"&gt;Known Bugs&lt;/span&gt;
 &#x2022; If you enter quotation marks in the Event/Method field the checkout will display an error message.</description>
-    <notes>Made compatible with 1.2.1.2</notes>
+    <notes>Added ability to specify charge as "per item" or "per order" for each shipping option.</notes>
     <authors><author><name>Sherrie Rohde</name><user>auto-converted</user><email>sherrie@minervapromotions.com</email></author><author><name>Robert Chambers</name><user>auto-converted</user><email>admin@robertchambers.co.uk</email></author><author><name>Shane Harper</name><user>auto-converted</user><email>shane@collinsharper.com</email></author></authors>
-    <date>2009-03-19</date>
-    <time>19:55:25</time>
-    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="minerva_default"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="d6a52d117c45c01e7588075562f3a3f3"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="72d57e80da895cf962461843608f131d"/></dir></dir></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="Mage"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="5bf0e572af50b5af6ec8d033ac3ae651"/></dir></dir></dir></dir></dir><dir name="Minerva"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="55207952d3db3f461551abe507379ac4"/></dir></dir></dir></dir><dir name="Shipping"><dir name="etc"><file name="config.xml" hash="9a4a8af0d264fe748d3495b26b6d2fdd"/><file name="system.xml" hash="78dde03b08466e3560a5485145883e74"/></dir><dir name="Model"><dir name="Carrier"><file name="Multiflat.php" hash="8a284266e7b468deadaaf4647dd454c1"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Minerva_Shipping.xml" hash="8d480a535a58a0035fe0c964077a1a97"/></dir></target></contents>
+    <date>2009-05-07</date>
+    <time>14:24:31</time>
+    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="minerva_default"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="d6a52d117c45c01e7588075562f3a3f3"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="72d57e80da895cf962461843608f131d"/></dir></dir></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="Mage"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="5bf0e572af50b5af6ec8d033ac3ae651"/></dir></dir></dir></dir></dir><dir name="Minerva"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="55207952d3db3f461551abe507379ac4"/></dir></dir></dir></dir><dir name="Shipping"><dir name="etc"><file name="config.xml" hash="9638bb72a1b81c667da58291617a0e55"/><file name="system.xml" hash="62278320ff3569f0a240e8098ec9e6b5"/></dir><dir name="Model"><dir name="Carrier"><file name="Multiflat.php" hash="1b966960b289c607277c8ce785347c8c"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Minerva_Shipping.xml" hash="8d480a535a58a0035fe0c964077a1a97"/></dir></target></contents>
     <compatible/>
     <dependencies/>
 </package>

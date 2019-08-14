@@ -21,12 +21,6 @@
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-
-
-
-
-
-
 class Minerva_Shipping_Model_Carrier_Multiflat extends Mage_Shipping_Model_Carrier_Abstract implements Mage_Shipping_Model_Carrier_Interface
 { 
     protected $_code = 'msmultiflat';
@@ -49,7 +43,14 @@ class Minerva_Shipping_Model_Carrier_Multiflat extends Mage_Shipping_Model_Carri
             || ($packageValue >= $this->getConfigData('free_shipping_subtotal'));
         for($i = 0; $i <= 10; $i++)
         {
+            if ($this->getConfigData('type'.$i) == 'O') { // per order
             $shippingPrice = $this->getConfigData('price'.$i);
+        } elseif ($this->getConfigData('type'.$i) == 'I') { // per item
+            $shippingPrice = ($request->getPackageQty() * $this->getConfigData('price'.$i)) - ($this->getFreeBoxes() * $this->getConfigData('price'.$i));
+        } else {
+            $shippingPrice = $this->getConfigData('price'.$i);
+        }
+		
 			$shippingName = $this->getConfigData('name'.$i);
             if($shippingName != "")
             {                

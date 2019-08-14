@@ -8,6 +8,7 @@
         <model>Minerva_Shipping_Model_Carrier_Multiflat</model>
         <name>Pickup at Event</name>
         <title>No Charge</title>
+        <type>I</type>
         <details>Enter pickup instructions here.</details>
         <specificerrmsg>This shipping method is currently unavailable.
           If you would like to ship using this shipping
