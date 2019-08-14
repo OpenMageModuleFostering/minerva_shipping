@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento Minerva Shipping Module
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category   Minerva
+ * @package    Minerva_Shipping
+ * @copyright  Copyright (c) 2008 Sherrie Rohde (http://www.sherrierohde.com)
+ * @author     Sherrie Rohde (sherrie.rohde@gmail.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+  <sections>
+    <carriers>
+      <groups>
+        <multiflat translate="label" module="shipping">
+          <label>Pickup at Event / Multiple Flatrates (Powered by Minerva)</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>1</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>1</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>100</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>2</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <name1 translate="label">
+              <label>Event / Method 1 >></label>
+              <frontend_type>text</frontend_type>
+              <sort_order>4</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </name1>
+            <price1 translate="label">
+              <label> • Price (0.00)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>5</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </price1>
+            <details1 translate="label">
+              <label>• Details</label>
+              <frontend_type>textarea</frontend_type>
+              <sort_order>6</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </details1>
+            <name2 translate="label">
+              <label>Event / Method 2 >></label>
+              <frontend_type>text</frontend_type>
+              <sort_order>7</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </name2>
+            <price2 translate="label">
+              <label> • Price (0.00)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>8</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </price2>
+            <details2 translate="label">
+              <label>• Details</label>
+              <frontend_type>textarea</frontend_type>
+              <sort_order>9</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </details2>
+            <name3 translate="label">
+              <label>Event / Method 3 >></label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </name3>
+            <price3 translate="label">
+              <label> • Price (0.00)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>11</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </price3>
+            <details3 translate="label">
+              <label>• Details</label>
+              <frontend_type>textarea</frontend_type>
+              <sort_order>12</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </details3>
+            <name4 translate="label">
+              <label>Event / Method 4 >></label>
+              <frontend_type>text</frontend_type>
+              <sort_order>13</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </name4>
+            <price4 translate="label">
+              <label> • Price (0.00)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>14</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </price4>
+            <details4 translate="label">
+              <label>• Details</label>
+              <frontend_type>textarea</frontend_type>
+              <sort_order>15</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </details4>
+            <name5 translate="label">
+              <label>Event / Method 5 >></label>
+              <frontend_type>text</frontend_type>
+              <sort_order>16</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </name5>
+            <price5 translate="label">
+              <label> • Price (0.00)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>17</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </price5>
+            <details5 translate="label">
+              <label>• Details</label>
+              <frontend_type>textarea</frontend_type>
+              <sort_order>18</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </details5>
+            <sallowspecific translate="label">
+              <label>Ship to applicable countries</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>90</sort_order>
+              <frontend_class>shipping-applicable-country</frontend_class>
+              <source_model>adminhtml/system_config_source_shipping_allspecificcountries</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sallowspecific>
+            <specificcountry translate="label">
+              <label>Ship to Specific countries</label>
+              <frontend_type>multiselect</frontend_type>
+              <sort_order>91</sort_order>
+              <source_model>adminhtml/system_config_source_country</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </specificcountry>
+            <showmethod translate="label">
+              <label>Show method if not applicable</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>92</sort_order>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </showmethod>
+            <specificerrmsg translate="label">
+              <label>Displayed Error Message</label>
+              <frontend_type>textarea</frontend_type>
+              <sort_order>80</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </specificerrmsg>
+          </fields>
+        </multiflat>
+      </groups>
+    </carriers>
+  </sections>
+</config>
