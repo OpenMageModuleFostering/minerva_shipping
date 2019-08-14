@@ -59,6 +59,7 @@ class Minerva_Shipping_Model_Carrier_Multiflat extends Mage_Shipping_Model_Carri
                 $method->setMethod($this->getConfigData('name'.$i)); 
                 $method->setMethodTitle($this->getConfigData('name'.$i));
 				$method->setMethodDetails($this->getConfigData('details'.$i));
+				$method->setMethodDescription($this->getConfigData('details'.$i));
                 $method->setPrice($shippingPrice);
                 $method->setCost($shippingPrice);
                 $result->append($method);

@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package>
     <name>Minerva_Shipping</name>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
     <extends/>
     <summary>Adds the ability to enter pickup locations or multiple flatrates and displays method details.</summary>
-    <description>PLEASE NOTE: THIS EXTENSION IS NOW COMPATIBLE WITH 1.2.1.2. However it currently does NOT display descriptions. I am working on resolving this and should have it fixed soon. 
+    <description>PLEASE NOTE: THIS EXTENSION IS NOW COMPATIBLE WITH 1.2.1.2. 
 
 As I have time I will extend the classes to hopefully make it not as version dependent; however, it relies heavily on template files. 
 
@@ -23,6 +23,13 @@ This extension is free to the community but I do work on it in my spare time so 
 &#x2022; I have been really busy lately so have not been able to modify in awhile, but hope to do so again soon. 
 
 &lt;span style="display: block; background-color: #ccc; padding: 2px 6px; font-weight: bold;"&gt;Release Notes&lt;/span&gt;
+1.2.1 - Changes
+&#x2022; Extension displays descriptions again
+
+1.2.0 - Changes
+&#x2022; Extension is now compatible with Magento 1.2.x
+&#x2022; Extension no longer creates invoicing and shipping errors caused by 1.1.x transition
+
 1.0.0 - Changes
 &#x2022; Extension is now compatible with Magento 1.1.6; previous versions will no longer be supported.
 
@@ -45,11 +52,9 @@ This module adds a flexible shipping module with two main uses:
 
 2. Multiple Flatrates - List up to 10 different flatrates so you can set a flat fee for Standard Shipping, Expedited Shipping, etc.
 
-There are two template files needed and both are included for the default and modern template packages.  These files are  
+There are two template files needed and both are included for the default package.  These files are  
 &#x2022; app/design/frontend/default/minerva_default/template/checkout/cart/shipping.phtml 
 &#x2022; app/design/frontend/default/minerva_default/template/checkout/onepage/shipping/available.phtml
-&#x2022; app/design/frontend/default/minerva_modern/template/checkout/cart/shipping.phtml 
-&#x2022; app/design/frontend/default/minerva_modern/template/checkout/onepage/shipping/available.phtml
 
 The class shipDetails is built into these two template files. The standard css tag for this class would be: 
 .shipDetails { padding-left: 25px; }
@@ -63,9 +68,9 @@ The class shipDetails is built into these two template files. The standard css t
 &#x2022; If you enter quotation marks in the Event/Method field the checkout will display an error message.</description>
     <notes>Made compatible with 1.2.1.2</notes>
     <authors><author><name>Sherrie Rohde</name><user>auto-converted</user><email>sherrie@minervapromotions.com</email></author><author><name>Robert Chambers</name><user>auto-converted</user><email>admin@robertchambers.co.uk</email></author><author><name>Shane Harper</name><user>auto-converted</user><email>shane@collinsharper.com</email></author></authors>
-    <date>2009-03-17</date>
-    <time>18:36:59</time>
-    <contents><target name="magecommunity"><dir name="Minerva"><dir name="Shipping"><dir name="etc"><file name="config.xml" hash="9a4a8af0d264fe748d3495b26b6d2fdd"/><file name="system.xml" hash="78dde03b08466e3560a5485145883e74"/></dir><dir name="Model"><dir name="Carrier"><file name="Multiflat.php" hash="dd6dc0e3028965dc8098c028cd38cc7d"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Minerva_Shipping.xml" hash="8d480a535a58a0035fe0c964077a1a97"/></dir></target></contents>
+    <date>2009-03-19</date>
+    <time>19:55:25</time>
+    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="minerva_default"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="d6a52d117c45c01e7588075562f3a3f3"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="72d57e80da895cf962461843608f131d"/></dir></dir></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="Mage"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="5bf0e572af50b5af6ec8d033ac3ae651"/></dir></dir></dir></dir></dir><dir name="Minerva"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="55207952d3db3f461551abe507379ac4"/></dir></dir></dir></dir><dir name="Shipping"><dir name="etc"><file name="config.xml" hash="9a4a8af0d264fe748d3495b26b6d2fdd"/><file name="system.xml" hash="78dde03b08466e3560a5485145883e74"/></dir><dir name="Model"><dir name="Carrier"><file name="Multiflat.php" hash="8a284266e7b468deadaaf4647dd454c1"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Minerva_Shipping.xml" hash="8d480a535a58a0035fe0c964077a1a97"/></dir></target></contents>
     <compatible/>
     <dependencies/>
 </package>
