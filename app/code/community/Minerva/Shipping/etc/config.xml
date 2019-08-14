@@ -1,77 +1,45 @@
 <?xml version="1.0"?>
-<!--
-/**
- * Magento Minerva Shipping Module
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@magentocommerce.com so we can send you a copy immediately.
- *
- * @category   Minerva
- * @package    Minerva_Shipping
- * @copyright  Copyright (c) 2008 Sherrie Rohde (http://www.sherrierohde.com)
- * @author     Sherrie Rohde (sherrie.rohde@gmail.com)
- * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- */
--->
 <config>
-    <modules>
-        <Minerva_Shipping>
-            <version>0.1.0</version>
-            <depends>
-                <Mage_Shipping />
-            </depends>
-        </Minerva_Shipping>
-    </modules>
-    <global>
-        <models>
-            <mpshipping>
-                <class>Minerva_Shipping</class>
-            </mpshipping>
-        </models>
-        <resources>
-            <mpshipping_setup>
-                <setup>
-                    <module>Minerva_Shipping</module>
-                </setup>
-                <connection>
-                    <use>directory_setup</use>
-                </connection>
-            </mpshipping_setup>
-            <mpshipping_read>
-                <connection>
-                    <use>local_read</use>
-                </connection>
-            </mpshipping_read>
-        </resources>
-        <sales>
-            <shipping>
-                <carriers>
-                    <multiflat>
-                        <class>Minerva_Shipping_Model_Carrier_Multiflat</class>
-                    </multiflat>
-                </carriers>
-            </shipping>
-        </sales>
-    </global>
-
-    <default>
-        <carriers>
-            <multiflat>
-                <active>0</active>
-                <model>minerva_shipping_model_carrier_multiflat</model>
-                <name>Pickup at Event</name>
-				<details>Enter pickup instructions here.</details>
-                <title>No Charge</title>
-                <handling_fee>0</handling_fee>
-                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
-            </multiflat>
-        </carriers>
-    </default>
-</config> 
+  <default>
+    <carriers>
+      <msmultiflat>
+        <active>1</active>
+        <sallowspecific>0</sallowspecific>
+        <model>Minerva_Shipping_Model_Carrier_Multiflat</model>
+        <name>Pickup at Event</name>
+        <title>No Charge</title>
+        <details>Enter pickup instructions here.</details>
+        <specificerrmsg>This shipping method is currently unavailable.
+          If you would like to ship using this shipping
+          method, please contact us.</specificerrmsg>
+        <handling_type>F</handling_type>
+      </msmultiflat>
+    </carriers>
+  </default>
+  <modules>
+    <Minerva_Shipping>
+      <version>1.2.0</version>
+    </Minerva_Shipping>
+  </modules>
+  <global>
+    <models>
+      <msmultiflat>
+        <class>Minerva_Shipping_Model</class>
+      </msmultiflat>
+    </models>
+    <resources>
+      <!-- resource identifier -->
+      <msmultiflat_setup>
+        <setup>
+          <!-- which module to look for install/upgrade files in -->
+          <module>Minerva_Shipping</module>
+        </setup>
+        <!-- specify database connection for this resource -->
+        <connection>
+          <!-- do not create new connection, use predefined core setup connection -->
+          <use>core_setup</use>
+        </connection>
+      </msmultiflat_setup>
+    </resources>
+  </global>
+</config>
