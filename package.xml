@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Minerva_Shipping</name>
-    <version>0.8.0</version>
+    <version>0.9.0</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
@@ -42,12 +42,11 @@ The class shipDetails is built into these two template files. The standard css t
 &#x2022; Disable the display of the cost if price field is left blank.
 &#x2022; The ability to show/hide the # of options you wish to use.
 &#x2022; Set min/max purchase limits for each option.</description>
-    <notes>&#x2022; Added an additional 5 shipping options for a total of 10. 
-&#x2022; No template files were changed in this release; there is no need to replace them if you are upgrading this extension.</notes>
+    <notes>&#x2022; Made compatible with 1.1 Beta.</notes>
     <authors><author><name>Sherrie Rohde</name><user>auto-converted</user><email>sherrie.rohde@gmail.com</email></author><author><name>Robert Chambers</name><user>auto-converted</user><email>admin@robertchambers.co.uk</email></author></authors>
-    <date>2008-07-07</date>
-    <time>18:40:33</time>
-    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="minerva_default"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="cd640307732c65de5c498e0aca267be3"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="f374b29274df61cb263caa2636ed78a3"/></dir></dir></dir></dir></dir><dir name="minerva_modern"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="24224eeaeaaf30867d9870da1cea1175"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="e780bf9f3bdee59b109213cb2c8de938"/></dir></dir></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="Mage"><dir name="Sales"><dir name="Model"><dir name="Convert"><file name="Order.php" hash="af924435ca4b859bdfdbe1d8d52951c6"/><file name="Quote.php" hash="073b5c403dd74183210915e1f45b5764"/></dir><dir name="Quote"><dir name="Address"><dir name="Total"><file name="Shipping.php" hash="5a49733ca24951c4926c6bf768b0f317"/></dir><file name="Rate.php" hash="215e24e55ce37c4f89de35bbddbd6aba"/></dir></dir></dir></dir></dir><dir name="Minerva"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="215e24e55ce37c4f89de35bbddbd6aba"/></dir></dir></dir></dir><dir name="Shipping"><dir name="etc"><file name="config.xml" hash="a02565dacc1b6c91b7d2027cb6e931b7"/><file name="system.xml" hash="97bd8101ec042b07c8d8565e332c1f79"/></dir><dir name="Model"><dir name="Carrier"><file name="Multiflat.php" hash="7d994bce397d47714f04a206c4f6e637"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Minerva_Shipping.xml" hash="b2afec80b356c21a45f2e8590d86013a"/></dir></target></contents>
+    <date>2008-07-21</date>
+    <time>21:18:45</time>
+    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="minerva_default"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="9712afaf3d648deb1f6ea0d4ec5578da"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="373e65a7e2cfb647b4c97906b78808de"/></dir></dir></dir></dir></dir><dir name="minerva_modern"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="24224eeaeaaf30867d9870da1cea1175"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="e780bf9f3bdee59b109213cb2c8de938"/></dir></dir></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="Mage"><dir name="Sales"><dir name="Model"><dir name="Convert"><file name="Order.php" hash="df46dbf934e2834e8493a7097792b3f9"/><file name="Quote.php" hash="99c0080bf509824489e76717c2b1b281"/></dir><dir name="Entity"><dir name="Quote"><dir name="Address"><dir name="Attribute"><dir name="Frontend"><file name="Shipping.php" hash="57b7ad77bad9ec3152e7f7d923fcd473"/></dir></dir></dir></dir></dir><dir name="Quote"><dir name="Address"><dir name="Total"><file name="Shipping.php" hash="b234a6621c9d4e6a475d284bf6932c7e"/></dir><file name="Rate.php" hash="d5e2eba6ec52303c40813fcc2f450185"/></dir></dir></dir></dir></dir><dir name="Minerva"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="215e24e55ce37c4f89de35bbddbd6aba"/></dir></dir></dir></dir><dir name="Shipping"><dir name="etc"><file name="config.xml" hash="a02565dacc1b6c91b7d2027cb6e931b7"/><file name="system.xml" hash="97bd8101ec042b07c8d8565e332c1f79"/></dir><dir name="Model"><dir name="Carrier"><file name="Multiflat.php" hash="7d994bce397d47714f04a206c4f6e637"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Minerva_Shipping.xml" hash="b2afec80b356c21a45f2e8590d86013a"/></dir></target></contents>
     <compatible/>
     <dependencies/>
 </package>
