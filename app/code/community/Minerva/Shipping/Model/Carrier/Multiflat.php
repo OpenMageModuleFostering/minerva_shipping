@@ -49,7 +49,7 @@ class Minerva_Shipping_Model_Carrier_Multiflat
             || ($packageValue >= $this->getConfigData('free_shipping_subtotal'));
 		
             
-        for($i = 0; $i <= 5; $i++)
+        for($i = 0; $i <= 10; $i++)
         {
             $shippingPrice = $this->getConfigData('price'.$i);
 			$shippingName = $this->getConfigData('name'.$i);

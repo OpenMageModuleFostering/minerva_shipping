@@ -1,21 +1,32 @@
 <?xml version="1.0"?>
 <package>
     <name>Minerva_Shipping</name>
-    <version>0.7.0</version>
+    <version>0.8.0</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
     <extends/>
     <summary>Adds the ability to enter pickup locations or multiple flatrates and displays method details.</summary>
-    <description>0.7.0 - Changes
-&#x2022; Removed the need to enter 0.00 for free options. 
-&#x2022; No template files were changed in this release, so there is no need to replace them.
+    <description>&lt;span style="display: block; background-color: #ccc; padding: 2px 6px; font-weight: bold;"&gt;Attention Please&lt;/span&gt;
+&#x2022; I try to check the forum for this extension regularly, but if I do not respond please PM me. 
+&#x2022; Feel free to post any feature requests and I will work on them as time allows (see below).
 
+&lt;span style="display: block; background-color: #ccc; padding: 2px 6px; font-weight: bold;"&gt;Release Notes&lt;/span&gt;
+0.8.0 - Changes
+&#x2022; Added an additional 5 shipping options for a total of 10. 
+&#x2022; No template files were changed in this release; there is no need to replace them if you are upgrading this extension.
+
+0.7.0 - Changes
+&#x2022; Removed the need to enter 0.00 for free options. 
+&#x2022; No template files were changed in this release; there is no need to replace them if you are upgrading this extension.
+&#x2022; Delcared as "stable" as no installation errors were reported following several downloads.
+
+&lt;span style="display: block; background-color: #ccc; padding: 2px 6px; font-weight: bold;"&gt;Installation Instructions&lt;/span&gt;
 This module adds a flexible shipping module with two main uses:
 
-1. Pickup at Event - List up to 5 events for your customers to select for pickup and include details about the date/location.  
+1. Pickup at Event - List up to 10 events for your customers to select for pickup and include details about the date/location.  To make free, simply enter 0.00 for the price.
 
-2. Multiple Flatrates - List up to 5 different flatrates so you can set a flat fee for Standard Shipping, Expedited Shipping, etc.
+2. Multiple Flatrates - List up to 10 different flatrates so you can set a flat fee for Standard Shipping, Expedited Shipping, etc.
 
 Their are two template files needed and both are included for the default and modern template packages.  These files are  
 &#x2022; app/design/frontend/default/minerva_default/template/checkout/cart/shipping.phtml 
@@ -23,13 +34,20 @@ Their are two template files needed and both are included for the default and mo
 &#x2022; app/design/frontend/default/minerva_modern/template/checkout/cart/shipping.phtml 
 &#x2022; app/design/frontend/default/minerva_modern/template/checkout/onepage/shipping/available.phtml
 
-The class shipDetails is built into these two template files, in order to not write over any custom css, they are not included.  The standard css tag for them would be: 
-.shipDetails { padding-left: 25px; }</description>
-    <notes>This release eliminates the need to add 0.00 for free methods. No template files were changed in this release, so there is no need to replace them.</notes>
+The class shipDetails is built into these two template files. The standard css tag for this class would be: 
+.shipDetails { padding-left: 25px; }
+
+&lt;span style="display: block; background-color: #ccc; padding: 2px 6px; font-weight: bold;"&gt;In Development&lt;/span&gt;
+&#x2022; Limit by region instead of country.
+&#x2022; Disable the display of the cost if price field is left blank.
+&#x2022; The ability to show/hide the # of options you wish to use.
+&#x2022; Set min/max purchase limits for each option.</description>
+    <notes>&#x2022; Added an additional 5 shipping options for a total of 10. 
+&#x2022; No template files were changed in this release; there is no need to replace them if you are upgrading this extension.</notes>
     <authors><author><name>Sherrie Rohde</name><user>auto-converted</user><email>sherrie.rohde@gmail.com</email></author><author><name>Robert Chambers</name><user>auto-converted</user><email>admin@robertchambers.co.uk</email></author></authors>
-    <date>2008-07-03</date>
-    <time>20:55:16</time>
-    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="minerva_default"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="cd640307732c65de5c498e0aca267be3"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="f374b29274df61cb263caa2636ed78a3"/></dir></dir></dir></dir></dir><dir name="minerva_modern"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="24224eeaeaaf30867d9870da1cea1175"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="e780bf9f3bdee59b109213cb2c8de938"/></dir></dir></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="Mage"><dir name="Sales"><dir name="Model"><dir name="Convert"><file name="Order.php" hash="af924435ca4b859bdfdbe1d8d52951c6"/><file name="Quote.php" hash="073b5c403dd74183210915e1f45b5764"/></dir><dir name="Quote"><dir name="Address"><dir name="Total"><file name="Shipping.php" hash="5a49733ca24951c4926c6bf768b0f317"/></dir><file name="Rate.php" hash="215e24e55ce37c4f89de35bbddbd6aba"/></dir></dir></dir></dir></dir><dir name="Minerva"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="215e24e55ce37c4f89de35bbddbd6aba"/></dir></dir></dir></dir><dir name="Shipping"><dir name="etc"><file name="config.xml" hash="a02565dacc1b6c91b7d2027cb6e931b7"/><file name="system.xml" hash="4ed1216bceb2309cf51d0f3a121238d5"/></dir><dir name="Model"><dir name="Carrier"><file name="Multiflat.php" hash="ae83ac9709a63c3bdbefa62409d67f29"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Minerva_Shipping.xml" hash="b2afec80b356c21a45f2e8590d86013a"/></dir></target></contents>
+    <date>2008-07-07</date>
+    <time>18:40:33</time>
+    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="minerva_default"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="cd640307732c65de5c498e0aca267be3"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="f374b29274df61cb263caa2636ed78a3"/></dir></dir></dir></dir></dir><dir name="minerva_modern"><dir name="template"><dir name="checkout"><dir name="cart"><file name="shipping.phtml" hash="24224eeaeaaf30867d9870da1cea1175"/></dir><dir name="onepage"><dir name="shipping_method"><file name="available.phtml" hash="e780bf9f3bdee59b109213cb2c8de938"/></dir></dir></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="Mage"><dir name="Sales"><dir name="Model"><dir name="Convert"><file name="Order.php" hash="af924435ca4b859bdfdbe1d8d52951c6"/><file name="Quote.php" hash="073b5c403dd74183210915e1f45b5764"/></dir><dir name="Quote"><dir name="Address"><dir name="Total"><file name="Shipping.php" hash="5a49733ca24951c4926c6bf768b0f317"/></dir><file name="Rate.php" hash="215e24e55ce37c4f89de35bbddbd6aba"/></dir></dir></dir></dir></dir><dir name="Minerva"><dir name="Sales"><dir name="Model"><dir name="Quote"><dir name="Address"><file name="Rate.php" hash="215e24e55ce37c4f89de35bbddbd6aba"/></dir></dir></dir></dir><dir name="Shipping"><dir name="etc"><file name="config.xml" hash="a02565dacc1b6c91b7d2027cb6e931b7"/><file name="system.xml" hash="97bd8101ec042b07c8d8565e332c1f79"/></dir><dir name="Model"><dir name="Carrier"><file name="Multiflat.php" hash="7d994bce397d47714f04a206c4f6e637"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Minerva_Shipping.xml" hash="b2afec80b356c21a45f2e8590d86013a"/></dir></target></contents>
     <compatible/>
     <dependencies/>
 </package>
