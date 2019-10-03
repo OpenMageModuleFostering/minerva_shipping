@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Minerva_Shipping",
+    "name": "OpenMageModuleFostering\/Minerva_Shipping",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Adds the ability to enter pickup locations or multiple flatrates and displays method details.",
     "authors": [
-    {
-        "name": "Sherrie Rohde",
-        "email": "sherrie@minervapromotions.com"
-    }
-],
+        {
+            "name": "Sherrie Rohde",
+            "email": "sherrie@minervapromotions.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
